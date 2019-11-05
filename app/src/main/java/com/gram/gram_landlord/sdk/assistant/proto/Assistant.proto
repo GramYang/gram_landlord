@@ -1,0 +1,16 @@
+syntax = "proto3";
+package com.gram.gram_landlord.sdk.assistant.proto;
+option java_outer_classname = "AssistantProto";
+message Request {
+    string key = 1;
+    map<string,string> data = 2;
+    bytes picture = 3;
+}
+
+message Response {
+    string key = 1;
+    int64 code = 2;
+    string message = 3;
+    map<string,string> data = 4;
+    bytes picture = 5;
+}
